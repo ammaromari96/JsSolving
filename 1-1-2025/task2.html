@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styler</title>
+    <link rel="Stylesheet" href="/task2.css">
+    
+</head>
+<body>
+    <div class="form">
+        <form>
+            <select id="fontSelect" onclick="updateStyles()">
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+
+            <select id="fontSizeSelect" onclick="updateStyles()">
+                <option value="20px">20px</option>
+                <option value="25px">25px</option>
+            </select>
+           
+            <input type="checkbox" id="italicCheckbox" onclick="updateStyles()">
+            <label>Italic</label>
+
+            <input type="checkbox" id="boldCheckbox" onclick="updateStyles()">
+            <label>Bold</label>
+
+            <input type="checkbox" id="underlineCheckbox" onclick="updateStyles()">
+            <label>Underline</label>
+        </form>
+    </div>
+
+    <div id="textInBox">hello My name is Ammar</div>
+
+    <script>
+   
+        function updateStyles() {
+            let textInBox = document.getElementById('textInBox');
+            let fontSelect = document.getElementById('fontSelect');
+            let fontSizeSelect = document.getElementById('fontSizeSelect');
+            let italicCheckbox = document.getElementById('italicCheckbox');
+            let boldCheckbox = document.getElementById('boldCheckbox');
+            let underlineCheckbox = document.getElementById('underlineCheckbox');
+
+        
+            textInBox.style.fontFamily = fontSelect.value;
+            textInBox.style.fontSize = fontSizeSelect.value;
+            textInBox.style.fontStyle = italicCheckbox.checked ? 'italic' : 'normal';
+            textInBox.style.fontWeight = boldCheckbox.checked ? 'bold' : 'normal';
+            textInBox.style.textDecoration = underlineCheckbox.checked ? 'underline' : 'none';
+        }
+    </script>
+</body>
+</html>

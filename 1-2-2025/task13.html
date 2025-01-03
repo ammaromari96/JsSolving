@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        
+        function shorterString(string1,string2,string3,string4,string5){
+
+            let shortest=string1;
+
+            if (string2.length<shortest.length){
+                shortest=string2
+            }
+
+            if(string3.length<shortest.length){
+                shortest=string3
+            }
+
+            if(string4.length<shortest.length){
+                shortest=string4
+            }
+
+            if(string5.length<shortest.length){
+                shortest=string5
+            }
+
+            return shortest;
+
+
+
+        }
+        
+console.log(shorterString("ahmad","ali","ammar","khaled","by"));
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+<!-- 13
+Write a function called shorterString
+that accept five string as an arguments,
+and return the first shorter string
+
+Ex: shorterString("air","school","car","by","github")
+=> by
+
+Ex: shorterString("air","tr","car","by","github")
+=> tr
+
+Ex: shorterString("by","tr","car","air","github")
+=> by
+
+Ex: shorterString("air","by","car","school","github")
+=> by
+
+Ex: shorterString("air","tr","by","car","github")
+=> by
+
+Ex: shorterString("air","tr","car","github","by")
+=> by
+ -->

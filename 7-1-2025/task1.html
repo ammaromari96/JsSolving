@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Form Validation</title>
+  <style>
+    .error {
+      color: red;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label>First Name:</label>
+    <input type="text" id="fname">
+    <span id="fnameError" class="error"></span>
+    <br><br>
+    
+    <label>Last name:</label>
+    <input type="text" id="lname">
+    <span id="lnameError" class="error"></span>
+    <br><br>
+    
+    <label>Birthday:</label>
+    <input type="text" id="bdate">
+    <span id="bdateError" class="error"></span>
+    <br><br>
+    
+    <label>Enter an Email:</label>
+    <input type="email" id="email">
+    <span id="emailError" class="error"></span>
+    <br><br>
+    
+    <label>Confirm Email:</label>
+    <input type="email" id="confirmEmail">
+    <span id="confirmEmailError" class="error"></span>
+    <br><br>
+    
+    <label>Password:</label>
+    <input type="password" id="password">
+    <span id="passwordError" class="error"></span>
+    <br><br>
+    
+    <label>Confirm Password:</label>
+    <input type="password" id="confirmPassword">
+    <span id="confirmPasswordError" class="error"></span>
+    <br><br>
+  </form>
+
+  <script src="/script.js">    
+  </script>
+</body>
+</html>

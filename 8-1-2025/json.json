@@ -1,0 +1,7 @@
+[
+  {"age":25,"name":"Ammar","email":"ammar@example.com","profession":"Software Engineer"},
+  {"age":28,"name":"Ali","email":"ali@example.com","profession":"Graphic Designer"},
+  {"age":30,"name":"Firas","email":"firas@example.com","profession":"Data Analyst"},
+  {"age":27,"name":"Anas","email":"anas@example.com","profession":"Product Manager"},
+  {"age":32,"name":"Saleh","email":"saleh@example.com","profession":"Marketing Specialist"}
+]
